@@ -12,7 +12,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	047b20305b7533bba0671eff825128a3
-URL:		http://opensource.visionp.de/modules/project/HTML_Template_Xipe.php
+URL:		http://pear.php.net/package/HTML_Template_Xipe/	
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
