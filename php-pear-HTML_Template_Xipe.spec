@@ -54,10 +54,42 @@ it saves the compiled template including the language code if required
 (i.e. a compiled index.tpl which is saved for english gets the
 filename index.tpl.en.php).
 
-
 This class has in PEAR status: %{_status}.
 
 %description -l pl
+Ten silnik szablonów to system kompiluj±cy - wszystkie szablony s±
+kompilowane do plików PHP. Czyni to dostarczanie plików szybszym przy
+kolejnych ¿±daniach, poniewa¿ szablony nie musz± byæ ponownie
+kompilowane. Je¶li szablon zmieni siê, musi byæ przekompilowany.
+
+Nie trzeba siê uczyæ nowego jêzyka szablonów. Poza trybem domy¶lnym,
+s± zestawy konstrukcji od wersji 1.6, pozwalaj±ce na edycjê szablonów
+edytorami WYSIWYG.
+
+Domy¶lnie silnik u¿ywa wciêæ do tworzenia bloków (mo¿na to wy³±czyæ).
+Ta w³asno¶æ zosta³a zainspirowana Pythonem i potrzeb± autora zmuszenia
+siê do pisania w³a¶ciwego kodu HTML, przy u¿yciu w³a¶ciwych wciêæ, aby
+uczyniæ kod bardziej czytelnym.
+
+Ka¿dy szablon mo¿na dostosowaæ na wiele sposobów. Mo¿na konfigurowaæ
+ka¿dy szablon lub ca³y katalog, aby u¿ywa³y ró¿nych ograniczników,
+parametrów buforowania itp. - poprzez plik XML lub fragment XML
+osadzony gdziekolwiek wewn±trz kodu tpl.
+
+Ostateczny plik (wynikowy plik HTML) tak¿e mo¿e byæ buforowany. Opcje
+buforowania mog± byæ w miarê potrzeby modyfikowane. Buforowanie mo¿e
+znacznie ograniczyæ obci±¿enie serwera, bo nie musi byæ ponownie
+przetwarzany ca³y plik PHP - czytelne dla klienta dane wynikowe s± po
+prostu dostarczane z bufora (dane s± zapisywane przy u¿yciu mechanizmu
+buforowania wyj¶cia w PHP).
+
+Ten silnik jest przygotowany na u¿ywanie tak¿e w aplikacjach
+wielojêzycznych. W przypadku u¿ywania PEAR::I18N do t³umaczenia
+szablonu, skompilowane szablony musz± byæ zapisywane pod ró¿n± nazw±
+dla ka¿dego jêzyka. Silnik tak¿e jest na to przygotowany - w razie
+potrzeby zapisuje skompilowany szablon z u¿yciem kodu jêzyk (np.
+skompilowany index.tpl zapisany dla jêzyka angielskiego otrzymuje
+nazwê index.tpl.en.php).
 
 Ta klasa ma w PEAR status: %{_status}.
 
