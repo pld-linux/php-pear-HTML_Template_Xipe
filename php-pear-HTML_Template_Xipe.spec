@@ -55,7 +55,7 @@ it saves the compiled template including the language code if required
 (i.e. a compiled index.tpl which is saved for english gets the
 filename index.tpl.en.php).
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ten silnik szablonów to system kompiluj±cy - wszystkie szablony s±
