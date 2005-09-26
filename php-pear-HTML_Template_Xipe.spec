@@ -7,18 +7,16 @@ Summary:	%{_pearname} - A simple, fast and powerful template engine
 Summary(pl):	%{_pearname} - prosty, szybki i potê¿ny system szablonów
 Name:		php-pear-%{_pearname}
 Version:	1.7.6
-Release:	2
+Release:	2.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	a5b291d4e64e603f9e58ce0f517e3600
-URL:		http://pear.php.net/package/HTML_Template_Xipe/	
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+URL:		http://pear.php.net/package/HTML_Template_Xipe/
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_noautoreq	'pear())'
 
 %description
 The template engine is a compiling engine, all templates are compiled
@@ -95,23 +93,21 @@ nazwê index.tpl.en.php).
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
-%install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Xipe/Filter
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/Xipe/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Xipe
-install %{_pearname}-%{version}/Xipe/Filter/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Xipe/Filter
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc install.log
 %dir %{php_pear_dir}/%{_class}/%{_subclass}/Xipe
 %dir %{php_pear_dir}/%{_class}/%{_subclass}/Xipe/Filter
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/Xipe/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/Xipe/Filter/*.php
