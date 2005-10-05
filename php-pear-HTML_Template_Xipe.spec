@@ -7,7 +7,7 @@ Summary:	%{_pearname} - A simple, fast and powerful template engine
 Summary(pl):	%{_pearname} - prosty, szybki i potê¿ny system szablonów
 Name:		php-pear-%{_pearname}
 Version:	1.7.6
-Release:	2.2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
