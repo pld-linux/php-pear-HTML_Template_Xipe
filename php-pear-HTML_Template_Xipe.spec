@@ -17,8 +17,8 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
-Requires:	php-pear-Tree >= 0.2
 Requires:	php-pear-Log >= 1.8
+Requires:	php-pear-Tree >= 0.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -99,6 +99,7 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 
+%install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
