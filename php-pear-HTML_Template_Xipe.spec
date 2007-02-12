@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_Xipe
 Summary:	%{_pearname} - A simple, fast and powerful template engine
-Summary(pl):	%{_pearname} - prosty, szybki i potê¿ny system szablonów
+Summary(pl.UTF-8):   %{_pearname} - prosty, szybki i potÄ™Å¼ny system szablonÃ³w
 Name:		php-pear-%{_pearname}
 Version:	1.7.6
 Release:	4
@@ -59,40 +59,40 @@ filename index.tpl.en.php).
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten silnik szablonów to system kompiluj±cy - wszystkie szablony s±
-kompilowane do plików PHP. Czyni to dostarczanie plików szybszym przy
-kolejnych ¿±daniach, poniewa¿ szablony nie musz± byæ ponownie
-kompilowane. Je¶li szablon zmieni siê, musi byæ przekompilowany.
+%description -l pl.UTF-8
+Ten silnik szablonÃ³w to system kompilujÄ…cy - wszystkie szablony sÄ…
+kompilowane do plikÃ³w PHP. Czyni to dostarczanie plikÃ³w szybszym przy
+kolejnych Å¼Ä…daniach, poniewaÅ¼ szablony nie muszÄ… byÄ‡ ponownie
+kompilowane. JeÅ›li szablon zmieni siÄ™, musi byÄ‡ przekompilowany.
 
-Nie trzeba siê uczyæ nowego jêzyka szablonów. Poza trybem domy¶lnym,
-s± zestawy konstrukcji od wersji 1.6, pozwalaj±ce na edycjê szablonów
+Nie trzeba siÄ™ uczyÄ‡ nowego jÄ™zyka szablonÃ³w. Poza trybem domyÅ›lnym,
+sÄ… zestawy konstrukcji od wersji 1.6, pozwalajÄ…ce na edycjÄ™ szablonÃ³w
 edytorami WYSIWYG.
 
-Domy¶lnie silnik u¿ywa wciêæ do tworzenia bloków (mo¿na to wy³±czyæ).
-Ta w³asno¶æ zosta³a zainspirowana Pythonem i potrzeb± autora zmuszenia
-siê do pisania w³a¶ciwego kodu HTML, przy u¿yciu w³a¶ciwych wciêæ, aby
-uczyniæ kod bardziej czytelnym.
+DomyÅ›lnie silnik uÅ¼ywa wciÄ™Ä‡ do tworzenia blokÃ³w (moÅ¼na to wyÅ‚Ä…czyÄ‡).
+Ta wÅ‚asnoÅ›Ä‡ zostaÅ‚a zainspirowana Pythonem i potrzebÄ… autora zmuszenia
+siÄ™ do pisania wÅ‚aÅ›ciwego kodu HTML, przy uÅ¼yciu wÅ‚aÅ›ciwych wciÄ™Ä‡, aby
+uczyniÄ‡ kod bardziej czytelnym.
 
-Ka¿dy szablon mo¿na dostosowaæ na wiele sposobów. Mo¿na konfigurowaæ
-ka¿dy szablon lub ca³y katalog, aby u¿ywa³y ró¿nych ograniczników,
-parametrów buforowania itp. - poprzez plik XML lub fragment XML
-osadzony gdziekolwiek wewn±trz kodu tpl.
+KaÅ¼dy szablon moÅ¼na dostosowaÄ‡ na wiele sposobÃ³w. MoÅ¼na konfigurowaÄ‡
+kaÅ¼dy szablon lub caÅ‚y katalog, aby uÅ¼ywaÅ‚y rÃ³Å¼nych ogranicznikÃ³w,
+parametrÃ³w buforowania itp. - poprzez plik XML lub fragment XML
+osadzony gdziekolwiek wewnÄ…trz kodu tpl.
 
-Ostateczny plik (wynikowy plik HTML) tak¿e mo¿e byæ buforowany. Opcje
-buforowania mog± byæ w miarê potrzeby modyfikowane. Buforowanie mo¿e
-znacznie ograniczyæ obci±¿enie serwera, bo nie musi byæ ponownie
-przetwarzany ca³y plik PHP - czytelne dla klienta dane wynikowe s± po
-prostu dostarczane z bufora (dane s± zapisywane przy u¿yciu mechanizmu
-buforowania wyj¶cia w PHP).
+Ostateczny plik (wynikowy plik HTML) takÅ¼e moÅ¼e byÄ‡ buforowany. Opcje
+buforowania mogÄ… byÄ‡ w miarÄ™ potrzeby modyfikowane. Buforowanie moÅ¼e
+znacznie ograniczyÄ‡ obciÄ…Å¼enie serwera, bo nie musi byÄ‡ ponownie
+przetwarzany caÅ‚y plik PHP - czytelne dla klienta dane wynikowe sÄ… po
+prostu dostarczane z bufora (dane sÄ… zapisywane przy uÅ¼yciu mechanizmu
+buforowania wyjÅ›cia w PHP).
 
-Ten silnik jest przygotowany na u¿ywanie tak¿e w aplikacjach
-wielojêzycznych. W przypadku u¿ywania PEAR::I18N do t³umaczenia
-szablonu, skompilowane szablony musz± byæ zapisywane pod ró¿n± nazw±
-dla ka¿dego jêzyka. Silnik tak¿e jest na to przygotowany - w razie
-potrzeby zapisuje skompilowany szablon z u¿yciem kodu jêzyk (np.
-skompilowany index.tpl zapisany dla jêzyka angielskiego otrzymuje
-nazwê index.tpl.en.php).
+Ten silnik jest przygotowany na uÅ¼ywanie takÅ¼e w aplikacjach
+wielojÄ™zycznych. W przypadku uÅ¼ywania PEAR::I18N do tÅ‚umaczenia
+szablonu, skompilowane szablony muszÄ… byÄ‡ zapisywane pod rÃ³Å¼nÄ… nazwÄ…
+dla kaÅ¼dego jÄ™zyka. Silnik takÅ¼e jest na to przygotowany - w razie
+potrzeby zapisuje skompilowany szablon z uÅ¼yciem kodu jÄ™zyk (np.
+skompilowany index.tpl zapisany dla jÄ™zyka angielskiego otrzymuje
+nazwÄ™ index.tpl.en.php).
 
 Ta klasa ma w PEAR status: %{_status}.
 
