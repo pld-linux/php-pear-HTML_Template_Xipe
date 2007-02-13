@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_Xipe
 Summary:	%{_pearname} - A simple, fast and powerful template engine
-Summary(pl.UTF-8):   %{_pearname} - prosty, szybki i potężny system szablonów
+Summary(pl.UTF-8):	%{_pearname} - prosty, szybki i potężny system szablonów
 Name:		php-pear-%{_pearname}
 Version:	1.7.6
 Release:	4
